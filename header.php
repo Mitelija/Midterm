@@ -17,6 +17,9 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+
+<?php wp_enqueue_script("jquery"); ?>
+
 <?php wp_head(); ?>
 </head>
 
@@ -41,3 +44,28 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+
+	<ol>
+
+		<li>Bill Gates</li>
+		<li>Carlos Slim</li>
+		<li>Warren Buffet</li>
+		<li>Amancio Ortega</li>
+		<li>Larry Ellison</li>
+		<li>Charles Coch</li>
+		<li>David Coch</li>
+		<li>Christy Walton</li>
+		<li>Jim Walton</li>
+		<li>Liliane Bettencourt</li>
+
+	</ol>
+
+
+	<script type="text/javascript">	
+
+	jQuery('li').click(function(){
+		jQuery(this).hide();
+
+	});
+
+	</script>
